@@ -1,0 +1,12 @@
+<h1>Мои заметки:</h1>
+<ul>
+    {% for note in notes %}
+        <li>
+        {{ note.title }}
+        <p>
+            {{ note.body }}
+            {{ note.created_at }}
+        </p>
+        </li>
+    {% endfor %}
+</ul>
